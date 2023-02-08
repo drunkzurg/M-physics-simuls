@@ -1,0 +1,225 @@
+12/17/2022 15:54:25
+
+########   Starting run step number: 1   Increment number: 1   ########
+
+Running command: C:\Users\Lenovo\Downloads\Applications\PrePoMax v1.3.5.1\Solver\ccx_static.exe Analysis-3
+
+************************************************************
+
+CalculiX Version 2.20, Copyright(C) 1998-2022 Guido Dhondt
+CalculiX comes with ABSOLUTELY NO WARRANTY. This is free
+software, and you are welcome to redistribute it under
+certain conditions, see gpl.htm
+
+************************************************************
+
+You are using an executable made on Fri Jul 29 19:13:05 CEST 2022
+
+  The numbers below are estimated upper bounds
+
+  number of:
+
+   nodes:       123414
+   elements:        63485
+   one-dimensional elements:            0
+   two-dimensional elements:            0
+   integration points per element:            4
+   degrees of freedom per node:            3
+   layers per element:            1
+
+   distributed facial loads:            0
+   distributed volumetric loads:            0
+   concentrated loads:         9530
+   single point constraints:         5376
+   multiple point constraints:            1
+   terms in all multiple point constraints:            1
+   tie constraints:            0
+   dependent nodes tied by cyclic constraints:            0
+   dependent nodes in pre-tension constraints:            0
+
+   sets:            6
+   terms in all sets:       152355
+
+   materials:            1
+   constants per material and temperature:            2
+   temperature points per material:            1
+   plastic data points per material:            0
+
+   orientations:            0
+   amplitudes:            5
+   data points in all amplitudes:            5
+   print requests:            4
+   transformations:            0
+   property cards:            0
+
+
+ STEP            1
+
+ Static analysis was selected
+
+ Decascading the MPC's
+
+ Determining the structure of the matrix:
+ Using up to 8 cpu(s) for setting up the structure of the matrix.
+ number of equations
+ 367554
+ number of nonzero lower triangular matrix elements
+ 12568701
+
+ Using up to 8 cpu(s) for the stress calculation.
+
+ Using up to 8 cpu(s) for the symmetric stiffness/mass contributions.
+
+Not reusing csc.
++-------------------------------------------------+
++     PaStiX : Parallel Sparse matriX package     +
++-------------------------------------------------+
+  Version:                                   6.0.1
+  Schedulers:
+    sequential:                            Enabled
+    thread static:                         Started
+    thread dynamic:                       Disabled
+    PaRSEC:                               Disabled
+    StarPU:                               Disabled
+  Number of MPI processes:                       1
+  Number of threads per process:                 8
+  Number of GPUs:                                0
+  MPI communication support:              Disabled
+  Distribution level:                     2D( 128)
+  Blocking size (min/max):             1024 / 2048
+
+  Matrix type:  General
+  Arithmetic:   Float
+  Format:       CSC
+  N:            367554
+  nnz:          25504956
+
++-------------------------------------------------+
+  Ordering step :
+    Ordering method is: Scotch
+    Time to compute ordering:              0.9424 
++-------------------------------------------------+
+  Symbolic factorization step:
+    Symbol factorization using: Fax Direct
+    Number of nonzeroes in L structure:   107562765
+    Fill-in of L:                         4.217328
+    Time to compute symbol matrix:        0.1131 
++-------------------------------------------------+
+  Reordering step:
+    Split level:                                 0
+    Stoping criteria:                           -1
+    Time for reordering:                  0.2135 
++-------------------------------------------------+
+  Analyse step:
+    Number of non-zeroes in blocked L:    215125530
+    Fill-in:                              8.434656
+    Number of operations in full-rank LU   :    103.74 GFlops
+    Prediction:
+      Model:                             AMD 6180  MKL
+      Time to factorize:                  3.8407 
+    Time for analyze:                     0.0200 
++-------------------------------------------------+
+  Factorization step:
+    Factorization used: LU
+    Time to initialize internal csc:      0.8603 
+    Time to initialize coeftab:           0.2835 
+    Time to factorize:                    2.1332  (48.63 GFlop/s)
+    Number of operations:                      103.74 GFlops
+    Number of static pivots:                     0
+    Time to solve:                        0.1093 
+    - iteration 1 :
+         total iteration time                   0.108 
+         error                                  0.30247
+    - iteration 2 :
+         total iteration time                   0.108 
+         error                                  0.044731
+    - iteration 3 :
+         total iteration time                   0.104 
+         error                                  0.0095195
+    - iteration 4 :
+         total iteration time                   0.108 
+         error                                  0.0022294
+    - iteration 5 :
+         total iteration time                   0.106 
+         error                                  0.0004806
+    - iteration 6 :
+         total iteration time                   0.104 
+         error                                  0.00011463
+    - iteration 7 :
+         total iteration time                   0.112 
+         error                                  2.7773e-05
+    - iteration 8 :
+         total iteration time                   0.112 
+         error                                  5.9654e-06
+    - iteration 9 :
+         total iteration time                   0.108 
+         error                                  1.4254e-06
+    - iteration 10 :
+         total iteration time                   0.11 
+         error                                  3.6292e-07
+    - iteration 11 :
+         total iteration time                   0.114 
+         error                                  6.7116e-08
+    - iteration 12 :
+         total iteration time                   0.112 
+         error                                  8.6699e-09
+    - iteration 13 :
+         total iteration time                   0.111 
+         error                                  9.3599e-10
+    - iteration 14 :
+         total iteration time                   0.119 
+         error                                  1.0208e-10
+    - iteration 15 :
+         total iteration time                   0.11 
+         error                                  1.4089e-11
+    - iteration 16 :
+         total iteration time                   0.108 
+         error                                  1.6515e-12
+    - iteration 17 :
+         total iteration time                   0.116 
+         error                                  1.4061e-13
+    Time for refinement:                  1.9421 
+    - iteration 1 :
+         total iteration time                   0.101 
+         error                                  7.0088e-11
+    - iteration 2 :
+         total iteration time                   0.158 
+         error                                  2.1212e-11
+    - iteration 3 :
+         total iteration time                   0.107 
+         error                                  4.1617e-12
+    - iteration 4 :
+         total iteration time                   0.112 
+         error                                  9.0026e-13
+    Time for refinement:                  0.5417 
+________________________________________
+
+CSC Conversion Time: 0.273782
+Init Time: 1.564306
+Factorize Time: 3.279279
+Solve Time: 2.627876
+Clean up Time: 0.000000
+---------------------------------
+Sum: 7.745244
+
+Total PaStiX Time: 7.745244
+CCX without PaStiX Time: 4.550490
+Share of PaStiX Time: 0.629913
+Total Time: 12.295734
+Reusability: 0 : 1 
+________________________________________
+
+ Using up to 8 cpu(s) for the stress calculation.
+
+ Estimating the stress errors
+
+
+ Job finished
+
+________________________________________
+
+Total CalculiX Time: 26.379419
+________________________________________
+
+
+ Process elapsed time:       26.584 s
